@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Members</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <nav class="site-nav">
+        <span class="brand">Student Showcase 2026</span>
+        <a href="index.html">Home</a>
+        <a href="element.html">Element Checker</a>
+        <a href="clubs.html" class="active">School Club Members</a>
+        <a href="creator.html">Meet the Creator</a>
+    </nav>
+
+    <div class="page-center">
+        <div class="panel">
+            <div class="panel-header"><h1>Add new club member:</h1></div>
+            <div class="panel-body">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" id="first_name" class="form-control mb-3" placeholder="Enter first name">
+
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" id="last_name" class="form-control mb-3" placeholder="Enter last name">
+
+                <button type="button" class="btn btn-spidey" py-click="add_member">Submit</button>
+
+                <div id="result" class="result-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <py-script src="clubs.py"></py-script>
+</body>
+</html>
